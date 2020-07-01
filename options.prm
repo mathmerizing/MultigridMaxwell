@@ -1,0 +1,40 @@
+# Listing of Parameters
+# ---------------------
+
+subsection Mesh & geometry parameters
+  # The dimension of the Nedelec elements
+  set Dimension             = 2
+
+  # Polynomial degree of the used Nedelec elements
+  set Polynomial degree     = 3
+
+  # Number of global mesh refinement steps applied to initial coarse grid
+  set Number of refinements = 5
+
+  set Show parameters = false
+end
+
+subsection Solver & Preconditioner
+  set Right Preconditioning = true
+  set Smoother Relaxation = 1.0
+
+  # Domain decomposition parameters
+  set Vertex Patches         = 	true
+  set interior_dofs_only     =  true
+  set boundary_patches       = false
+  set level_boundary_patches = false
+  set single_cell_patches    = false
+  set invert_vertex_mapping  =  true
+end
+
+subsection Multigrid	
+  set Smoothing Steps = 5
+end
+
+subsection Output parameters
+  # Name of the output file (without extension)
+  set Output file   = solution
+
+  # A name for the output format to be used
+  set Output format = vtu
+end
