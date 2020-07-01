@@ -1,7 +1,7 @@
 /*  
  *  Written by Julian Roth
  *  Supervised by Sebastian Kinnewig, Thomas Wick
- *  March 2020
+ *  July 2020
  */
 
 // === Deal.II Includes ==
